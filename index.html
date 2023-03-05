@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./main.js">
+    <script src="./main.js"></script>
+    <script src="./examplePromise.js"></script>
+    <!-- <element event="./main.js"></element> -->
+    <!-- <element event='some JavaScript'> -->
 </head>
 <body>
     <h1>Caculator</h1>
@@ -14,5 +17,72 @@
         <input name="a" type="number" style="width: 20%;" placeholder="nhap so A">
         <input name="b" type="number" style="width: 20%;" placeholder="nhap so B">
     </div>
+
+    <select name="pass_value" class="all_option">
+        <option value="1">Cong</option>
+        <option value="2">Tru</option>
+        <option value="3">Nhan</option>
+        <option value="4">Chia</option>
+    </select>
+
+    <button class="result">
+        RESULT!
+    </button>
+    <button class="return">
+        RETURN!
+    </button>
+
+    <ul class="comments-block">
+        
+    </ul>
 </body>
+
+
+    <script>
+        const valueA = document.querySelector('input[name="a"]');
+            let A = valueA.onchange = function(e) {
+                console.log(typeof(e.target.value));
+                return(e.target.value);
+            }
+        const valueB = document.querySelector('input[name="b"]');
+            let B = valueB.onchange = function(e) {
+                console.log(e.target.value);
+                return(e.target.value);
+            }
+        const selectOp = document.querySelector('select[name="pass_value"]');
+            selectOp.onchange = function(e) {
+                // console.log(typeof(e.target.value));
+                switch (e.target.value) {
+                    case '1':
+                        console.log("Cong");
+                        console.log(A + B);
+                    break;
+                    case '2':
+                        console.log("Tru");
+                    break;
+                    case '3':
+                        console.log("Nhan");
+                    break;
+                    case '4':
+                        console.log("Nhan");
+                    break;
+                }
+            }
+        let btn = document.querySelector('.result');
+        console.log(btn);
+            btn.onclick = function(e) {
+                btn.innerHTML = Date("Y,m,d");
+                btn.onmouseover = "this.style.backgroundColor='red'";
+                console.log('result');
+            }
+
+            // btn.innerHTML = Date("Y,m,d");
+
+        let rt = document.querySelector('.return');
+            rt.onclick = function(e) {
+                btn.innerHTML = btn;
+                // console.log('result');
+            }
+    </script>
+
 </html>
