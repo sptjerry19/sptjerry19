@@ -1,8 +1,10 @@
-🌱 I'm currently learning:
-- ✨ [e.g. Laravel 11, Vue 3, Docker]
-- ☁️ Cloud & CI/CD pipelines
-- 📈 Building scalable APIs
+👋 Hi, I'm a Backend Developer (PHP/Laravel)
+🧩 API-first design, optimized database, Redis/Queue
+🐳 Dockerization of services, smooth CI/CD, full logging/monitoring
+☁️ Secure deployment on AWS: RDS, S3, CloudFront, EC2/ECS
+⚡ Goal: fast – stable – scalable system
 
+🔗 Portfolio/Git: YOUR_GIT_LINK
 🔧 Tech Stack:
 ```bash
 Languages: PHP, JavaScript, Python  
